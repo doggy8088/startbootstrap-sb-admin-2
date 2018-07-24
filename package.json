@@ -5,7 +5,7 @@
   "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2",
   "author": "Start Bootstrap",
   "scripts": {
-    "prebuild": "bower install",
+    "preinstall": "bower install",
     "build": "gulp",
     "start": "gulp dev"
   },
