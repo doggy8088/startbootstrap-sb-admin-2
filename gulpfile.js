@@ -103,6 +103,8 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('dist/assets/data'))
         
     gulp.src(['pages/*.html'])
+        .pipe(replace('../dist/assets/assets/', 'assets/'))
+        .pipe(replace('../dist/assets/', 'assets/'))
         .pipe(replace("../vendor/", 'assets/vendor/'))
         .pipe(replace("../dist/", 'assets/'))
         .pipe(replace("../data/", 'assets/data/'))
